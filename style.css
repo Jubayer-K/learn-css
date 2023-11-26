@@ -1,0 +1,95 @@
+/* Universal selector */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* element selector */
+
+div {
+  background-color: red;
+}
+/* class selector */
+.red {
+  background-color: red;
+}
+/* id selector */
+#green {
+  background-color: green;
+}
+/* child selector */
+div > p {
+  background-color: brown;
+  color: white;
+}
+/* descendant selector*/
+div ul li {
+  background-color: aqua;
+}
+
+/* Pseudo Selectors */
+a:visited {
+  color: red;
+}
+a:link {
+  color: green;
+}
+a:active {
+  background-color: red;
+}
+a:hover {
+  color: blue;
+  font-size: large;
+}
+p:first-child {
+  background-color: aquamarine;
+  color: red;
+}
+
+/* CSS Box Model */
+
+.box {
+  background-color: aqua;
+  font-size: 40px;
+}
+.box1 {
+  padding: 10px;
+  margin: 25px;
+  border: 2px solid #ff0000;
+  height: 200px;
+}
+/* Calculating the total dimension of the element:
+The total width and height of the element is calculated with the formula:
+
+Total Width = Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin
+
+Total Height = Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin */
+.box1 {
+  box-sizing: border-box;
+}
+
+/*
+Margin Collapse:
+Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+
+This does not happen on left and right margins! Only top and bottom margins! */
+
+/* CSS Font styles */
+
+#fonts {
+  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+  /* font-style: italic; */
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: black;
+  text-decoration-thickness: 3px;
+}
+/* importing fonts in css */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Poppins&display=swap");
+
+#fonts2 {
+  font-family: "Baloo 2", sans-serif;
+  line-height: 1.7;
+  text-transform: capitalize;
+}
