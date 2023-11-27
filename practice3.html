@@ -4,94 +4,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Card Exercise</title>
+    <title>Practice 3 </title>
     <style>
-        .container {
-            border: 2px solid rgba(91, 91, 91, 0.544);
-            width: 35vw;
-            border-radius: 15px;
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: grey;
+            display: flex;
+            margin-top: 100px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            width: 200px;
+            height: 350px;
+            border-radius: 7px;
+            margin: 10px;
+            transition: all 0.5s;
+        }
+
+        body .card:hover {
+            box-shadow: 10px 10px 30px 0px rgba(255, 255, 255, 0.641);
+            background-color: rgb(68, 66, 66);
+            color: white;
+            transform: scale(1.12);
+        }
+
+        .image {
+            display: flex;
+            padding: 7px 7px 7px 7px;
         }
 
         .image img {
-            height: 30vw;
-            display: flex;
-            justify-content: center;
-            margin: 20px;
-            margin-top: 20px;
-            border-radius: 20px;
+            border-radius: 7px;
         }
 
-        .tags ul {
-            list-style: none;
-            display: flex;
-            padding-left: 0px;
+        .content h2 {
+            font-family: 'Poppins', sans-serif;
+            padding: 1px 10px;
+            margin-top: -5px;
+            margin-bottom: -5px;
         }
 
-        .tags ul li {
-            margin: 5px;
-            border: 2px solid rgba(139, 139, 139, 0.135);
-            padding: 10px;
-            border-radius: 40px;
-            color: gray;
+        .content p {
+            font-size: 10px;
+            padding: 1px 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .capsules {
+            padding: 0 14px;
+            font-family: 'Poppins', sans-serif;
 
         }
 
-        .tags ul li:hover {
+        .capsules span {
+            border: 1px solid rgba(0, 0, 0, 0.256);
+            padding: 1px 10px;
+            border-radius: 10px;
+            font-size: 10px;
+            color: grey;
+
+        }
+
+        .capsules span:hover {
             color: black;
-            border: 2px solid #000;
-
+            border: 1px solid rgb(80, 79, 79);
+            background-color: grey;
+            cursor: pointer;
         }
 
-        .readMoreBtn {
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-            border-radius: 30px;
-            border: 2px solid #000;
-            width: 8vw;
+        .button {
+            text-align: center;
         }
 
-        .heading h1 {
-            margin: 10px;
+        .button button {
+            padding: 4px 13px;
+            border-radius: 20px;
+            font-size: 9px;
+            border: none;
+            background-color: rgba(0, 157, 255, 0.248);
+            color: rgb(4, 116, 153);
+            margin-top: 10px;
         }
 
-        .paragraph p {
-            margin: 10px;
+        .button button:hover {
+            background-color: rgba(0, 157, 255, 0.631);
+            color: rgb(0, 0, 0);
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
-    <section>
-        <div class="container">
-            <div class="image">
-                <img src="asstes/pic1.jpg" alt="Machine Image">
-            </div>
-            <div class="tags">
-                <ul>
-                    <li>Machine</li>
-                    <li>Glow</li>
-                </ul>
-            </div>
-            <div class="heading">
-                <h1>Ai Time travel Machine</h1>
-            </div>
-            <div class="paragraph">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi earum modi delectus maiores
-                    veniam
-                    nesciunt! Corrupti ratione, iure sequi odio reprehenderit dignissimos ipsam molestiae non
-                    laboriosam.
-                    Earum, quaerat cupiditate.
-                </p>
-            </div>
-            <div class="readMoreBtn">
-                Read More
-            </div>
+    <div class="card">
+        <div class="image">
+            <img width="190px" height="140px" src="asstes/pic (1).jpg" alt="Time Travel machine">
         </div>
+        <div class="capsules">
+            <span>Machine</span>
+            <span>Glow</span>
         </div>
-    </section>
+        <div class="content">
+            <h2>Machine</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quam omnis error iure magnam dolores
+                praesentium cum amet animi. Dolorum quos in velit.</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
+    </div>
+    <div class="card">
+        <div class="image">
+            <img width="190px" height="140px" src="asstes/pic (2).jpg" alt="Time Travel machine">
+        </div>
+        <div class="capsules">
+            <span>Machine</span>
+            <span>Glow</span>
+        </div>
+        <div class="content">
+            <h2>Machine</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio blanditiis, corrupti eveniet vel
+                in, fuga, error voluptatum unde maiores quod!.</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
+    </div>
+    <div class="card">
+        <div class="image">
+            <img width="190px" height="140px" src="asstes/pic (3).jpg" alt="Time Travel machine">
+        </div>
+        <div class="capsules">
+            <span>Machine</span>
+            <span>Glow</span>
+        </div>
+        <div class="content">
+            <h2>Machine</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quam omnis error iure magnam dolores
+                praesentium cum amet animi. Dolorum quos in velit.</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
+    </div>
+    <div class="card">
+        <div class="image">
+            <img width="190px" height="140px" src="asstes/pic (4).jpg" alt="Time Travel machine">
+        </div>
+        <div class="capsules">
+            <span>Machine</span>
+            <span>Glow</span>
+        </div>
+        <div class="content">
+            <h2>Machine</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quam omnis error iure magnam dolores
+                praesentium cum amet animi. Dolorum quos in velit.</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
+    </div>
+    <div class="card">
+        <div class="image">
+            <img width="190px" height="140px" src="asstes/pic (5).jpg" alt="Time Travel machine">
+        </div>
+        <div class="capsules">
+            <span>Machine</span>
+            <span>Glow</span>
+        </div>
+        <div class="content">
+            <h2>Machine</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quam omnis error iure magnam dolores
+                praesentium cum amet animi. Dolorum quos in velit.</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
+    </div>
 
 </body>
 
